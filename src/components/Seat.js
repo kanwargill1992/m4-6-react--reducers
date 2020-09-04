@@ -17,7 +17,7 @@ const Seat = ({ rowIndex, seatIndex, width, height, price, isBooked }) => {
       <ImageWrapper
         isBooked={isBooked}
         disabled={isBooked}
-        onClick={beginBookingProcess}
+        onClick={() => beginBookingProcess}
       >
         <SeatImage src={seat} alt="seat" width={width} height={height} />
       </ImageWrapper>

@@ -7,10 +7,11 @@ import App from "./components/App";
 const rootElement = document.getElementById("root");
 
 ReactDOM.render(
-  <SeatProvider>
-    <BookingProvider>
+  <BookingProvider>
+    <SeatProvider>
       <App />
-    </BookingProvider>
-  </SeatProvider>,
+    </SeatProvider>
+  </BookingProvider>,
+
   rootElement
 );
